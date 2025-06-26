@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a23;
+  color: white;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #111;
+}
+
+h1 {
+  font-size: 3rem;
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #1a1a2e;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+  width: 300px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.diamond {
+  width: 60px;
+  height: 60px;
+  background-color: gold;
+  transform: rotate(45deg);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0a0a23;
+}
